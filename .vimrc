@@ -4,6 +4,9 @@ syntax on
 filetype plugin indent on
 
 map <C-n> :NERDTree<CR>
+nmap <F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+map <C-O> :TlistToggle<CR>
+
 
 " pathongen
 execute pathogen#infect()
